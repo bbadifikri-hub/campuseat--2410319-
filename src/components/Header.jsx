@@ -1,6 +1,4 @@
-function Header() {
-  const cartCount = 0 // akan jadi state dalam Part C
-
+function Header({ cartCount }) {
   return (
     <header className="header">
       <h1 className="logo">CampusEats</h1>
