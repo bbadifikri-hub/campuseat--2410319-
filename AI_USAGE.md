@@ -14,3 +14,10 @@ Add a new section every week, before you tag. Did not use AI? Write "None" under
 - What I asked for: i asked why my website gone blank
 - What I kept, changed or rejected, and why: i forget to import the file thats why promp can read the data path
 - One thing the AI got wrong and how I fixed it: none
+
+## Week 3
+- Tool: Deepseek
+- Asked: How to create controlled form with validation 
+- Kept:  validate() struction and handleSubmit
+- Changed: adding validation pickup time
+- AI got wrong: AI forgot preventDefault, I add it by my own

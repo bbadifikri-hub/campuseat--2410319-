@@ -1,4 +1,5 @@
 function MenuItemCard({ item, onAdd }) {
+  const soldOut = item.available === false   // hanya true kalau explicitly false
   return (
     <article className="card menu-card">
       <div className="thumb" aria-hidden="true">{item.name.charAt(0)}</div>
@@ -8,10 +9,10 @@ function MenuItemCard({ item, onAdd }) {
       <p className="price">RM {item.price.toFixed(2)}</p>
       <button
         className="btn"
-        disabled={!item.available}
+        disabled={soldOut}
         onClick={() => onAdd(item)}
       >
-        {item.available ? 'Add to cart' : 'Sold out'}
+        {soldOut ? 'Sold out' : 'Add to cart'}
       </button>
     </article>
   )

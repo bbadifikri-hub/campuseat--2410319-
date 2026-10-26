@@ -1,0 +1,69 @@
+[
+  {
+    "id": "2410319-Mahasiswa-Vendor",
+    "name": "Mahasiswa Vendor",
+    "location": "International Islamic University Malaysia",
+    "openHours": "8:00 am - 11:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2410319-m1", "name": "Nasi Lemak", "description": "Fragrant coconut rice with sambal, egg, peanuts and anchovies and small chicken", "price": 5.5, "category": "Mains", "available": true, "popular": true },
+      { "id": "2410319-m2", "name": "Mie Goreng", "description": "Stir-fried noodles with vegetables and egg with chicken slice", "price": 7.0, "category": "Mains", "available": true, "popular": false },
+      { "id": "2410319-m3", "name": "Roti Canai", "description": "Crispy flatbread served with dhal curry", "price": 1.5, "category": "Sides", "available": true, "popular": true },
+      { "id": "2410319-m4", "name": "Teh Tarik", "description": "Malaysian pulled milk tea", "price": 2.0, "category": "Drinks", "available": true, "popular": true },
+      { "id": "2410319-m5", "name": "Kopi O", "description": "Traditional black coffee", "price": 1.5, "category": "Drinks", "available": true, "popular": false }
+    ]
+  },
+  {
+    "id": "2417185-jackals-corner",
+    "name": "Jackal's Corner",
+    "location": "Nilai, Negeri Sembilan",
+    "openHours": "8:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2417185-jc-1", "name": "Jackal's Signature Chicken Chop", "description": "Grilled chicken chop served with black pepper sauce, fries and coleslaw", "price": 15.9, "category": "Mains", "available": true, "popular": true },
+      { "id": "2417185-jc-2", "name": "Classic Beef Burger", "description": "Juicy beef patty with cheese, lettuce, tomato and special sauce", "price": 13.9, "category": "Mains", "available": true, "popular": true },
+      { "id": "2417185-jc-3", "name": "Creamy Chicken Carbonara", "description": "Spaghetti served with creamy carbonara sauce and grilled chicken", "price": 14.9, "category": "Mains", "available": true, "popular": true },
+      { "id": "2417185-jc-4", "name": "Spaghetti Aglio Olio", "description": "Spaghetti tossed with garlic, olive oil, chili flakes and mushrooms", "price": 12.9, "category": "Mains", "available": true, "popular": false },
+      { "id": "2417185-jc-5", "name": "Jackal's Special Fried Rice", "description": "Signature fried rice served with fried chicken, egg and sambal", "price": 9.5, "category": "Mains", "available": true, "popular": true },
+      { "id": "2417185-jc-6", "name": "Buttermilk Chicken Rice", "description": "Crispy chicken coated in creamy buttermilk sauce served with rice", "price": 11.9, "category": "Mains", "available": true, "popular": false },
+      { "id": "2417185-jc-7", "name": "Iced Cafe Latte", "description": "Fresh espresso mixed with chilled milk and served over ice", "price": 8, "category": "Drinks", "available": true, "popular": true },
+      { "id": "2417185-jc-8", "name": "Chocolate Frappe", "description": "Blended chocolate drink topped with whipped cream", "price": 10.5, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2417185-jc-9", "name": "Iced Lemon Tea", "description": "Refreshing black tea with fresh lemon and ice", "price": 5, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2417185-jc-10", "name": "Chocolate Brownie", "description": "Rich chocolate brownie served with vanilla ice cream", "price": 7.5, "category": "Sides", "available": true, "popular": true }
+    ]
+  },
+  {
+"id": "2415663-Sarap-Pagi",
+"name": "Sarap Pagi",
+"location": "Cafe Faruq, Mahallah Faruq",
+"openHours": "7:00 am - 12:00 pm",
+"isOpen": true,
+"menu": [
+{ "id": "2415663-m1", "name": "Nasi Lemak Ayam", "description": "Coconut rice, fried chicken, sambal, egg and peanuts", "price": 7.5, "category": "Mains", "available": true, "popular": true },
+{ "id": "2415663-m2", "name": "Nasi Goreng Kampung", "description": "Kampung-style fried rice with anchovies and egg", "price": 6.5, "category": "Mains", "available": true, "popular": false },
+{ "id": "2415663-m3", "name": "Mee Goreng Mamak", "description": "Spicy fried yellow noodles with tofu and egg", "price": 6, "category": "Mains", "available": true, "popular": true },
+{ "id": "2415663-m4", "name": "Maggi Goreng", "description": "Stir-fried instant noodles with vegetables and egg", "price": 5.5, "category": "Mains", "available": true, "popular": false },
+{ "id": "2415663-m5", "name": "Roti Canai", "description": "Crispy flatbread served with dhal curry", "price": 2, "category": "Sides", "available": true, "popular": true },
+{ "id": "2415663-m6", "name": "Pisang Goreng", "description": "Crispy fried banana fritters (5 pieces)", "price": 3, "category": "Sides", "available": true, "popular": false },
+{ "id": "2415663-m7", "name": "Teh Tarik", "description": "Pulled milk tea", "price": 2.5, "category": "Drinks", "available": true, "popular": true },
+{ "id": "2415663-m8", "name": "Milo Ais", "description": "Iced chocolate malt drink", "price": 3, "category": "Drinks", "available": true, "popular": false }
+]
+},
+{
+"id": "2410463-Ideal-Bistro",
+"name": "Ideal Bistro",
+"location": "Cafe Zubair, Mahallah Zubair",
+"openHours": "10:00 am - 10:00 pm",
+"isOpen": true,
+"menu": [
+{ "id": "2410463-m1", "name": "Chicken Chop", "description": "Crispy deep-fried chicken cutlet with black pepper sauce and fries", "price": 10.5, "category": "Mains", "available": true, "popular": true },
+{ "id": "2410463-m2", "name": "Grilled Chicken", "description": "Juicy grilled chicken thigh served with mashed potatoes and coleslaw", "price": 12.0, "category": "Mains", "available": true, "popular": true },
+{ "id": "2410463-m3", "name": "Beef Bolognese Pasta", "description": "Spaghetti tossed in a rich, slow-cooked minced beef tomato sauce", "price": 9.5, "category": "Mains", "available": true, "popular": false },
+{ "id": "2410463-m4", "name": "Carbonara Pasta", "description": "Creamy pasta with mushrooms, chicken slices, and parmesan cheese", "price": 10.0, "category": "Mains", "available": true, "popular": true },
+{ "id": "2410463-m5", "name": "French Fries", "description": "Golden crispy potato fries served with chili sauce", "price": 4.5, "category": "Sides", "available": true, "popular": false },
+{ "id": "2410463-m6", "name": "Mushroom Soup with Garlic Bread", "description": "Warm and creamy mushroom soup served with toasted garlic bread", "price": 5.0, "category": "Sides", "available": true, "popular": false },
+{ "id": "2410463-m7", "name": "Iced Lemon Tea", "description": "Refreshing black tea infused with fresh lemon slice", "price": 3.5, "category": "Drinks", "available": true, "popular": true },
+{ "id": "2410463-m8", "name": "Root Beer Float", "description": "Classic root beer topped with a scoop of vanilla ice cream", "price": 4.5, "category": "Drinks", "available": true, "popular": false }
+]
+}
+]
