@@ -1,17 +1,31 @@
-import MenuItemCard from './MenuItemCard.jsx'
+import { useCart } from '../hooks/useCart.js'
 
-function MenuList({ items, onAdd }) {
-  if (items.length === 0) {
-    return <p className="muted">No items on this menu yet.</p>
-  }
+export function MenuList({ vendor }) {
+  const { addToCart } = useCart()
 
   return (
-    <div className="grid">
-      {items.map((item) => (
-        <MenuItemCard key={item.id} item={item} onAdd={onAdd} />
+    <ul>
+      {vendor.menu.map((item) => (
+        <li key={item.id}>
+          <h3>{item.name}</h3>
+          <p>{item.description}</p>
+          <p>${item.price.toFixed(2)}</p>
+          <button
+            onClick={() =>
+              addToCart({
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                vendorId: vendor.id,
+                vendorName: vendor.name,
+              })
+            }
+            disabled={!item.available}
+          >
+            {item.available ? 'Add to Cart' : 'Unavailable'}
+          </button>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
-
-export default MenuList

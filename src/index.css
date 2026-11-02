@@ -171,3 +171,128 @@ a.card:hover { border-color: var(--green-light); }
 .form input, .form select { padding: 0.5rem; border: 1px solid #c5cbd3; border-radius: 8px; font: inherit; }
 .field-error { color: #b3261e; font-size: 0.85rem; margin: 0; }
 .error { border-left: 4px solid #b3261e; }
+
+/* Tambah dalam index.css */
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card h3 {
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+.menu-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e63946;
+  margin-top: auto; /* Supaya harga tolak butang ke bawah */
+  margin-bottom: 15px;
+}
+
+.menu-card .tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: bold;
+}
+
+.menu-card .btn {
+  width: 100%;
+}
+
+/* Gaya untuk butang btn (kalau belum ada) */
+.btn {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #21867a;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card .thumb {
+  width: 40px;
+  height: 40px;
+  background-color: #e0f2f1; /* Warna hijau cair */
+  color: #2a9d8f;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vendors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Tambah / Ubah dalam index.css */
+
+header {
+  background-color: #2a9d8f; /* Warna Hijau */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -20px -20px 30px -20px; /* Supaya ia penuhkan seluruh lebar skrin */
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Tukar warna teks link supaya nampak jelas atas warna hijau */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+nav a:hover, 
+nav a.active {
+  opacity: 1;
+  text-decoration: underline;
+}

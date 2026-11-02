@@ -10,7 +10,12 @@
       { "id": "2410319-m2", "name": "Mie Goreng", "description": "Stir-fried noodles with vegetables and egg with chicken slice", "price": 7.0, "category": "Mains", "available": true, "popular": false },
       { "id": "2410319-m3", "name": "Roti Canai", "description": "Crispy flatbread served with dhal curry", "price": 1.5, "category": "Sides", "available": true, "popular": true },
       { "id": "2410319-m4", "name": "Teh Tarik", "description": "Malaysian pulled milk tea", "price": 2.0, "category": "Drinks", "available": true, "popular": true },
-      { "id": "2410319-m5", "name": "Kopi O", "description": "Traditional black coffee", "price": 1.5, "category": "Drinks", "available": true, "popular": false }
+      { "id": "2410319-m5", "name": "Kopi O", "description": "Traditional black coffee", "price": 1.5, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2410319-m6", "name": "Cendol", "description": "Traditional dessert drink", "price": 3.0, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2410319-m7", "name": "Laksa Johor", "description": "Traditional noodle soup from Johor", "price": 6.0, "category": "Mains", "available": true, "popular": false },
+      { "id": "2410319-m8", "name": "Mee Rebus", "description": "Noodle dish served with a thick, spicy gravy", "price": 5.5, "category": "Mains", "available": true, "popular": false },
+      { "id": "2410319-m9", "name": "Rojak Campur ", "description": "An assortment of crisp,fresh or fried ingredients tossed together in a rich sweet,savory, and slghtly spicy sauce", "price": 4.0, "category": "Sides", "available": true, "popular": false },
+      { "id": "2410319-m10", "name": "Coconut Milk Shake", "description": "Refreshing coconut milk shake", "price": 4.0, "category": "Drinks", "available": true, "popular": false }
     ]
   },
   {

@@ -1,5 +1,5 @@
 function MenuItemCard({ item, onAdd }) {
-  const soldOut = item.available === false   // hanya true kalau explicitly false
+  const soldOut = item.available === false;
   return (
     <article className="card menu-card">
       <div className="thumb" aria-hidden="true">{item.name.charAt(0)}</div>
@@ -11,11 +11,11 @@ function MenuItemCard({ item, onAdd }) {
         className="btn"
         disabled={soldOut}
         onClick={() => onAdd(item)}
+        style={{ marginTop: 'auto' }} // Supaya butang sentiasa di bawah
       >
         {soldOut ? 'Sold out' : 'Add to cart'}
       </button>
     </article>
-  )
+  );
 }
-
-export default MenuItemCard
+export default MenuItemCard;
