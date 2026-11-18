@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export function useLocalStorage(key, initialValue) {
+export function useLocalStorage(key, initialValue, enabled = true) {
   const [value, setValue] = useState(() => {
     try {
       const saved = localStorage.getItem(key)
@@ -12,12 +12,13 @@ export function useLocalStorage(key, initialValue) {
   })
 
   useEffect(() => {
+    if (!enabled) return              // guest: jangan tulis
     try {
       localStorage.setItem(key, JSON.stringify(value))
     } catch (err) {
       console.error(`useLocalStorage write error for "${key}":`, err)
     }
-  }, [key, value])
+  }, [key, value, enabled])
 
   return [value, setValue]
 }

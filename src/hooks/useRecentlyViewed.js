@@ -1,11 +1,21 @@
 import { useLocalStorage } from './useLocalStorage.js'
+import { useAuth } from './useAuth.js'
 
 const MAX_ITEMS = 5
 
 export function useRecentlyViewed() {
-  const [recent, setRecent] = useLocalStorage('campuseats-recent', [])
+  const { user } = useAuth()
+
+  // Per-user key; guest guna key sementara yang tak kekal
+  // (guest: key unik supaya useState tak campur, tapi kita tak simpan)
+  const storageKey = user ? `ce-recent-${user.uid}` : 'ce-recent-guest'
+
+  const [recent, setRecent] = useLocalStorage(storageKey, [])
 
   function addRecent(item, vendor) {
+    // Guest: jangan simpan — hanya rekod dalam memori (state sahaja)
+    if (!user) return
+
     const entry = {
       id: item.id,
       name: item.name,
@@ -13,7 +23,6 @@ export function useRecentlyViewed() {
       vendorId: vendor.id,
       vendorName: vendor.name,
     }
-    // Buang entri lama yang sama, letak di depan, hadkan 5
     setRecent((prev) => {
       const filtered = prev.filter((r) => r.id !== item.id)
       return [entry, ...filtered].slice(0, MAX_ITEMS)

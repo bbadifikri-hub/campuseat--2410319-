@@ -1,11 +1,13 @@
 import { useVendors } from '../hooks/useVendors.js'
 import { useNavigate, Link } from 'react-router'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
+import { useAuth } from '../hooks/useAuth.js' 
 import VendorCard from '../components/VendorCard.jsx'
 
 export default function HomePage() {
   const { vendors, loading, error } = useVendors()
   const { recent, clearRecent } = useRecentlyViewed()
+  const { user } = useAuth()
   const navigate = useNavigate()
 
   if (loading) return <p>Loading...</p>
@@ -14,7 +16,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Recently viewed */}
-      {recent.length > 0 && (
+      { user && recent.length > 0 && (
         <section style={{ marginBottom: '30px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h2 style={{ margin: '0 0 10px 0' }}>Recently viewed</h2>

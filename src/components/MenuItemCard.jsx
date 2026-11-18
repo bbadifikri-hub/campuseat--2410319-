@@ -10,7 +10,7 @@ function MenuItemCard({ item, onAdd }) {
       <button
         className="btn"
         disabled={soldOut}
-        onClick={() => onAdd(item)}
+        onClick={(e) => { e.preventDefault(); onAdd(item); }}
         style={{ marginTop: 'auto' }} // Supaya butang sentiasa di bawah
       >
         {soldOut ? 'Sold out' : 'Add to cart'}
